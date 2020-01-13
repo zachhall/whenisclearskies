@@ -7,7 +7,7 @@ countdownTimer = setInterval(nextshow, 1000);
 
 function nextshow() {
 	myMoment = moment.utc();
-	momentLocal = myMoment.local();
+	momentLocal = myMoment.local(true);
 	nextMonday = momentLocal.countdown(firstshow).toString();
 
 	$("#show-countdown").html(nextMonday);
