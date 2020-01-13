@@ -316,7 +316,7 @@
                     date = format ? currentDate.format(format) : currentDate.clone();
                     dates.push(date);
                 }
-                if(currentDate >= this.end) {
+                if(type === "all" && currentDate >= this.end) {
                     break;
                 }
             }
@@ -711,13 +711,30 @@
     // A return value of 2 means the date is the 3rd occurence of that day
     // of the week in the month.
     moment.fn.monthWeekByDay = function(date) {
-        return Math.floor((this.date()-1)/7);
+        var day, week0, day0, diff;
+
+        // date obj
+        day = this.clone();
+
+        // First day of the first week of the month
+        week0 = this.clone().startOf("month").startOf("week");
+
+        // First day of week
+        day0 = this.clone().startOf("week");
+
+        diff = day0.diff(week0, "weeks");
+
+        if (day.subtract(diff, "weeks").month() === this.clone().month()) {
+            return diff;
+        }
+
+        return diff - 1;
     };
 
     // Plugin for removing all time information from a given date
     moment.fn.dateOnly = function() {
         if (this.tz && typeof(moment.tz) == 'function') {
-            return moment.tz(this.format('YYYY-MM-DD[T]00:00:00Z'), 'UTC');
+            return moment.tz(this.format('YYYY-MM-DDT00:00:00.000Z'), 'UTC');
         } else {
             return this.hours(0).minutes(0).seconds(0).milliseconds(0).add(this.utcOffset(), "minute").utcOffset(0);
         }

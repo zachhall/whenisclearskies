@@ -245,6 +245,10 @@ textarea {
   border-radius: 5px;
 }
 
+.livenow {
+  font-size: 300%;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
