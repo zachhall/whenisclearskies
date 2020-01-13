@@ -233,6 +233,18 @@ textarea {
   margin-top: 20px;
 }
 
+#credit {
+  color: white;
+  align-self: flex-end;
+  margin: 5% auto 0;
+}
+
+#credit a {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
