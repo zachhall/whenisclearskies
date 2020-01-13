@@ -6,14 +6,10 @@ nextshow();
 countdownTimer = setInterval(nextshow, 1000);
 
 function nextshow() {
-	myMoment = moment.utc();
-	momentLocal = myMoment.local(true);
-	nextMonday = momentLocal.countdown(firstshow).toString();
+	myMoment = moment();
+	nextMonday = myMoment.countdown(firstshow).toString();
 
 	$("#show-countdown").html(nextMonday);
 
 	// console.log(momentLocal);
 }
-
-// var guessTz = moment.tz.guess(true);
-// console.log(guessTz);
