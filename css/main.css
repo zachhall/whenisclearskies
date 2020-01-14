@@ -15,6 +15,7 @@
 @font-face { font-family: Stellar; font-weight: lighter; src:url('../fonts/Stellar-light.otf'); }
 @font-face { font-family: Stellar; font-weight: medium; src:url('../fonts/Stellar-Medium.otf'); }
 @font-face { font-family: Stellar; font-weight: bold; src:url('../fonts/Stellar-Bold.otf'); }
+@font-face { font-family: Helvetica-UltraCompressed; src:url('../fonts/Helvetica-UltraCompressed.otf'); }
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -210,8 +211,9 @@ textarea {
 }
 
 #show-countdown {
-  font-family: 'Stellar', 'Roboto', sans-serif;
+  font-family: 'Helvetica-UltraCompressed', 'Roboto', sans-serif;
   font-weight: lighter;
+  text-transform: uppercase;
   color: white;
   font-size: 300%;
   max-width: 90%;
@@ -220,6 +222,7 @@ textarea {
 
 .cs_logo {
   width: 600px;
+  height: auto;
   max-width: 100%;
   margin: 2% auto;
   -webkit-filter: drop-shadow(5px 5px 3px #000);
@@ -243,7 +246,7 @@ textarea {
   margin: 2% auto;
 }
 
-.btn {
+.btn {  
   display: inline-block;
   padding: 5px 20px;
   margin: 0 auto;
