@@ -221,9 +221,26 @@ textarea {
 .cs_logo {
   width: 600px;
   max-width: 100%;
-  margin: auto;
+  margin: 2% auto;
   -webkit-filter: drop-shadow(5px 5px 3px #000);
   filter: drop-shadow(5px 5px 3px #000);
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 5% auto;
+  flex-wrap: wrap;
+
+  background-color: rgba(0,0,0,0.4);
+  padding: 0 2%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
 }
 
 .btn {
@@ -243,10 +260,18 @@ textarea {
   margin-top: 3%;
 }
 
+.twitch-btn:hover {
+  background-color: #7438cc;
+}
+
 .twitter-btn {
   background-color: #55acee;
   color: white;
   margin-top: 20px;
+}
+
+.twitter-btn:hover {
+  background-color: #4489BE;
 }
 
 #credit {
