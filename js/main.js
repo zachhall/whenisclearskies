@@ -22,14 +22,14 @@ if (myMoment.isBefore(firstshow)) {
 
 function countdownToShow1() {
 	myMoment = moment();
-	nextMonday = myMoment.countdown(firstshow).toString();
+	nextMonday = myMoment.countdown(firstshow).toHTML();
 
 	$("#show-countdown").html(nextMonday);
 }
 
 function countdownToShow2() {
 	myMoment = moment();
-	nextMonday = myMoment.countdown(nextShow).toString();
+	nextMonday = myMoment.countdown(nextShow).toHTML();
 
 	$("#show-countdown").html(nextMonday);
 }
