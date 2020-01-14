@@ -11,6 +11,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face { font-family: Stellar; src:url('../fonts/Stellar-Regular.otf'); }
+@font-face { font-family: Stellar; font-weight: lighter; src:url('../fonts/Stellar-light.otf'); }
+@font-face { font-family: Stellar; font-weight: medium; src:url('../fonts/Stellar-Medium.otf'); }
+@font-face { font-family: Stellar; font-weight: bold; src:url('../fonts/Stellar-Bold.otf'); }
+
 html {
   font-family: 'Roboto', sans-serif;
   color: #222;
@@ -199,9 +204,10 @@ textarea {
 }
 
 #show-countdown {
+  font-family: 'Stellar', 'Roboto', sans-serif;
+  font-weight: lighter;
   color: white;
   font-size: 300%;
-
 }
 
 .cs_logo {
