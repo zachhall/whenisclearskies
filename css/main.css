@@ -215,7 +215,7 @@ textarea {
   font-weight: lighter;
   text-transform: uppercase;
   color: white;
-  font-size: 300%;
+  font-size: 500%;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -249,7 +249,7 @@ textarea {
 .btn {  
   display: inline-block;
   padding: 5px 20px;
-  margin: 0 auto;
+  margin: 3% auto 0;
 
   font-size: 150%;
   font-weight: bold;
@@ -260,7 +260,6 @@ textarea {
 .twitch-btn {
   background-color: #9146FF;
   color: white;
-  margin-top: 3%;
 }
 
 .twitch-btn:hover {
@@ -270,11 +269,19 @@ textarea {
 .twitter-btn {
   background-color: #55acee;
   color: white;
-  margin-top: 20px;
 }
 
 .twitter-btn:hover {
   background-color: #4489BE;
+}
+
+.youtube-btn {
+  background-color: #FF0000;
+  color: white;
+}
+
+.youtube-btn:hover {
+  background-color: #e60000;
 }
 
 #credit {
