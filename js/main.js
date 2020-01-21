@@ -1,8 +1,8 @@
 var now, firstshow, endShow, nextShow, nextMonday, showday, countdownTimer, everyMon;
 
-firstshow = moment.tz("01/20/2020 18:20:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles");
-endShow = moment.tz("01/20/2020 21:30:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles")
-nextShow = moment.tz("01/27/2020 18:30:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles");
+firstshow = moment.tz("01/27/2020 18:20:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles");
+endShow = moment.tz("01/27/2020 21:30:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles")
+nextShow = moment.tz("02/03s/2020 18:30:00", "MM-DD-YYYY HH:mm:ss", "America/Los_Angeles");
 
 countdownToShow1();
 myMoment = moment();
